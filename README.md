@@ -1,4 +1,4 @@
-#django-terminal
+#django-admin-terminal
 
 bash console in the browser for django devops!
 
@@ -6,24 +6,24 @@ bash console in the browser for django devops!
 
 Service needs to be running on ```https``` to securely POST commands to the server. 
 
-![django-terminal](https://raw.githubusercontent.com/assem-ch/django-terminal/master/django-terminal/static/images/screenshot.png)
+![django-admin-terminal](https://raw.githubusercontent.com/assem-ch/django-admin-terminal/master/django-admin-terminal/static/images/screenshot.png)
 
 Did a quick update on the code; need to pull the code and restart the server, and waiting for server admin to do that? 
-django-terminal is for you!
+django-admin-terminal is for you!
 
 ## Installation
 
 **Step 1**
-> pip install django-terminal
+> pip install django-admin-terminal
 
 **Step 2**
 
-include __django_terminal__ into INSTALLED_APPS ```settings.py```
+include __django_admin_terminal__ into INSTALLED_APPS ```settings.py```
 
 ```python
 INSTALLED_APPS = (
     # add to the existing apps
-    'django_terminal'
+    'django_admin_terminal'
 )
 ```
 
@@ -71,7 +71,7 @@ $ ls -al
 
 ##Caveats
 
-> all the **django superusers** can access this portal, so make sure only the right guys have got access before deploying django-terminal to live.
+> all the **django superusers** can access this portal, so make sure only the right guys have got access before deploying django-admin-terminal to live.
 
 > long running tasks and interactive commands won't probably work.
 
