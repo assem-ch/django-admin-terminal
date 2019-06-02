@@ -37,7 +37,7 @@ in your browser, goto http://127.0.0.1:8000/admin/terminal/ to access the web te
 
 ## Configuration
 
-Include two more variables to ```settings.py```
+Include those variables to ```settings.py```
 
 ```python
 TERMINAL_SECURE = True  # False to allow http 
@@ -48,7 +48,7 @@ TERMINAL_WHITELIST = [
 ```
 
 
-##Tip
+## Tip to run sudo
 To run sudo tasks, you can use
 
 ```bash
