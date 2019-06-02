@@ -1,15 +1,9 @@
 #django-admin-terminal
 
-bash console in the browser for django devops!
-
-##IMPORTANT
-
-Service needs to be running on ```https``` to securely POST commands to the server. 
+A terminal in the browser for lazy django devops!.
 
 ![django-admin-terminal](https://raw.githubusercontent.com/assem-ch/django-admin-terminal/master/django-admin-terminal/static/images/screenshot.png)
 
-Did a quick update on the code; need to pull the code and restart the server, and waiting for server admin to do that? 
-django-admin-terminal is for you!
 
 ## Installation
 
@@ -29,20 +23,6 @@ INSTALLED_APPS = (
 
 **Step 3**
 
-include two more variables to ```settings.py```
-
-> Even without these settings, it will work.
-
-> allows requests from all ips, and works even when not in https **(NOT GOOD).**
-
-```python
-SECURE_TERMINAL = True  # False to allow http
-TERMINAL_WHITELIST = [
-                "127.0.0.1"
-]  # List of IPs to be allowed - NB: All allowed by default
-```
-**Step 4**
-
 run
 > python manage.py collectstatic
 
@@ -50,7 +30,19 @@ Done!
 
 in your browser, goto http://127.0.0.1:8000/admin/terminal/ to access the web terminal.
 
-NB: make sure you got superuser privileges.
+**note:** make sure you got superuser privileges.
+
+
+## Configuration
+
+Include two more variables to ```settings.py```
+
+```python
+SECURE_TERMINAL = True  # False to allow http
+TERMINAL_WHITELIST = [
+                "127.0.0.1"
+]  # List of IPs to be allowed - NB: All allowed by default
+```
 
 
 ##Tip
@@ -82,4 +74,5 @@ BSD License - checkout LICENSE file for the complete license document
 
 
 ## Author
-[Anoop Thomas Mathew](https://twitter.com/atmb4u "atmb4u")
+- ( Django Console ) : [Anoop Thomas Mathew](https://twitter.com/atmb4u "atmb4u") 
+- [Assem_Chelli](https://github.com/assem-ch "assem-ch") 
