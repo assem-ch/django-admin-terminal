@@ -20,7 +20,7 @@ def get_client_ip(request):
 def terminal(request):
     """
     Serves the console at /admin/console
-    SECURE_TERMINAL
+    TERMINAL_SECURE
         values: True/False
         Defined in settings to denote whether to allow access from http or https
         default: False - ALLOW access to ALL.
@@ -31,7 +31,7 @@ def terminal(request):
 
     """
     try:
-        v1 = request.is_secure() == settings.SECURE_TERMINAL
+        v1 = request.is_secure() == settings.TERMINAL_SECURE
     except AttributeError:
         v1 = True
     try:
@@ -41,7 +41,12 @@ def terminal(request):
     except:
         print("TERMINAL_WHITELIST needs to be a list of ip addresses to be allowed access")
         v2 = True
-    settings_variables = v1 and v2
+    try:
+        v3 = not (not settings.DEBUG and settings.TERMINAL_DEBUG_ONLY)
+    except AttributeError:
+        v3 = False
+
+    settings_variables = v1 and v2 and v3
     if request.user.is_superuser and settings_variables:
         context = {
             'STATIC_URL': settings.STATIC_URL
@@ -75,6 +80,7 @@ def get_admin_urls(urls):
     """
     Appends the terminal and post urls to the url patterns
     """
+
     def get_urls():
         my_urls = [
             path('terminal/', admin.site.admin_view(terminal)),

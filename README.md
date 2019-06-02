@@ -1,8 +1,10 @@
 # django_admin_terminal
+****
+A terminal in the browser for lazy django devops!  It works -by default- only in debug mode.
 
-A terminal in the browser for lazy django devops!.
+**Important!**  Please use it at your own risk.
 
-![django_admin_terminal](https://raw.githubusercontent.com/assem-ch/django_admin_terminal/master/django_admin_terminal/static/images/screenshot.png)
+![django admin terminal](https://raw.githubusercontent.com/assem-ch/django_admin_terminal/master/django_admin_terminal/static/images/screenshot.png)
 
 
 ## Installation
@@ -38,7 +40,8 @@ in your browser, goto http://127.0.0.1:8000/admin/terminal/ to access the web te
 Include two more variables to ```settings.py```
 
 ```python
-SECURE_TERMINAL = True  # False to allow http
+TERMINAL_SECURE = True  # False to allow http 
+TERMINAL_DEBUG_ONLY = True # False to allow in prod
 TERMINAL_WHITELIST = [
                 "127.0.0.1"
 ]  # List of IPs to be allowed - NB: All allowed by default
