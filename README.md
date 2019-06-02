@@ -1,4 +1,4 @@
-#django-admin-terminal
+# django-admin-terminal
 
 A terminal in the browser for lazy django devops!.
 
