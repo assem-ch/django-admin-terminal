@@ -4,7 +4,7 @@ A terminal in the browser for lazy django devops!  It works -by default- only in
 
 **Important!**  Please use it at your own risk.
 
-![django admin terminal](https://raw.githubusercontent.com/assem-ch/django_admin_terminal/master/django_admin_terminal/static/images/screenshot.png)
+![django admin terminal](https://raw.githubusercontent.com/assem-ch/django-admin-terminal/master/django_admin_terminal/static/images/screenshot.png)
 
 
 ## Installation
