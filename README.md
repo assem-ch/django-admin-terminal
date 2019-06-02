@@ -10,7 +10,9 @@ A terminal in the browser for lazy django devops!  It works -by default- only in
 ## Installation
 
 **Step 1**
-> pip install git+https://github.com/assem-ch/django-admin-terminal/
+```bash 
+pip install git+https://github.com/assem-ch/django-admin-terminal/
+```
 
 **Step 2**
 
