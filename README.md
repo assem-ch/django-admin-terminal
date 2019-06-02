@@ -2,7 +2,7 @@
 
 A terminal in the browser for lazy django devops!.
 
-![django-admin-terminal](https://raw.githubusercontent.com/assem-ch/django-admin-terminal/master/django-admin-terminal/static/images/screenshot.png)
+![django-admin-terminal](https://raw.githubusercontent.com/assem-ch/django-admin-terminal/master/django_admin_terminal/static/images/screenshot.png)
 
 
 ## Installation
