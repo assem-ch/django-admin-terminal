@@ -74,5 +74,5 @@ BSD License - checkout LICENSE file for the complete license document
 
 
 ## Author
-- ( Django Console ) : [Anoop Thomas Mathew](https://twitter.com/atmb4u "atmb4u") 
-- [Assem_Chelli](https://github.com/assem-ch "assem-ch") 
+- ( [Django Console](https://github.com/atmb4u/django-console) ) : [Anoop Thomas Mathew](https://twitter.com/atmb4u "atmb4u") 
+- [Assem Chelli](https://github.com/assem-ch "assem-ch") 
