@@ -1,14 +1,14 @@
-#django-admin-terminal
+# django_admin_terminal
 
 A terminal in the browser for lazy django devops!.
 
-![django-admin-terminal](https://raw.githubusercontent.com/assem-ch/django-admin-terminal/master/django_admin_terminal/static/images/screenshot.png)
+![django_admin_terminal](https://raw.githubusercontent.com/assem-ch/django_admin_terminal/master/django_admin_terminal/static/images/screenshot.png)
 
 
 ## Installation
 
 **Step 1**
-> pip install django-admin-terminal
+> pip install git+https://github.com/assem-ch/django-admin-terminal/
 
 **Step 2**
 
@@ -52,7 +52,8 @@ To run sudo tasks, you can use
 echo mypassword | sudo -S command
 ```
 
-Example commands 
+**Example commands** 
+
 ```bash
 $ echo pa$$w0rD | sudo -S service nginx restart
 
@@ -61,9 +62,9 @@ $ git pull origin master
 $ ls -al
 ```
 
-##Caveats
+## Caveats
 
-> all the **django superusers** can access this portal, so make sure only the right guys have got access before deploying django-admin-terminal to live.
+> all the **django superusers** can access this portal, so make sure only the right guys have got access before deploying django_admin_terminal to live.
 
 > long running tasks and interactive commands won't probably work.
 

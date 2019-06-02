@@ -47,7 +47,7 @@ def terminal(request):
             'STATIC_URL': settings.STATIC_URL
         }
         context.update(csrf(request))
-        return render_to_response("django-admin-terminal/admin/index.html", context)
+        return render_to_response("django_admin_terminal/admin/index.html", context)
     else:
         return HttpResponse("Unauthorized.", status=403)
 

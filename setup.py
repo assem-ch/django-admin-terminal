@@ -2,7 +2,7 @@ from distutils.core import setup
 from setuptools import find_packages
 
 setup(
-    name='django-admin-terminal',
+    name='django_admin_terminal',
     description='bash console in the browser for django admins',
     keywords='django, bash, terminal, console, server',
     packages=find_packages(),
@@ -10,7 +10,7 @@ setup(
     version="0.5.0",
     author="Assem Chelli",
     author_email="assem.ch@gmail.com",
-    url='http://github.com/assem-ch/django-admin-terminal',
+    url='http://github.com/assem-ch/django_admin_terminal',
     classifiers=[
                     'Development Status :: 4 - Beta',
                  'Environment :: Web Environment',
