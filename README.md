@@ -1,6 +1,6 @@
 # django_admin_terminal
 ****
-A terminal in the browser for lazy django devops!  It works -by default- only in debug mode.
+A terminal in the browser for lazy django devops!  It works only in debug mode -by default-.
 
 **Important!**  Please use it at your own risk.
 
