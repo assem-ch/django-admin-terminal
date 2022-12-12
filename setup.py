@@ -20,8 +20,6 @@ setup(
                  'Operating System :: OS Independent',
                  'Programming Language :: Python',
                  'Topic :: Internet :: WWW/HTTP',
-                 'Topic :: Internet :: WWW/HTTP :: Web Console',
-                 'Topic :: Internet :: WWW/HTTP :: WSGI',
                  'Topic :: Software Development :: Libraries :: Application Frameworks',
                  'Topic :: Software Development :: Libraries :: Python Modules',
                  ],
